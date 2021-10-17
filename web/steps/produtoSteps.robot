@@ -13,4 +13,13 @@ Quando eu pesquisar pelo produto "${PRODUCT}"
     Input search text "${PRODUCT}"
     Click submit button
 
-# Então o produto "Blouse" deve ser listado na página de resultado de busca
+Então o produto "${PRODUCT}" deve ser listado na página de resultado de busca
+    Check returned product page title
+    Check returned product "${PRODUCT}"
+
+E também o valor do produto "${PRICE}"
+    Check returned price product "${PRICE}"
+                
+Então deve ser exibido a mensagem "${MESSAGE}"
+    Check returned not found product "${MESSAGE}"
+

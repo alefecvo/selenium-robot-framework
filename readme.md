@@ -9,7 +9,8 @@ This project is used to automation test using Automation Pratice Site with Robot
 
 1. Visual Code + extension - Robot Framework Language Server
 2. Python 3 or above
-3. Homebrew + Chromedriver
+3. Homebrew
+4. Driver Chrome (Chromedriver) and Firefox (Geckodriver)
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -17,6 +18,10 @@ This project is used to automation test using Automation Pratice Site with Robot
 
 ```bash
 brew install --cask chromedriver
+```
+
+```bash
+brew install geckodriver
 ```
 
 

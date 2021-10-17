@@ -2,17 +2,18 @@
 Library                    SeleniumLibrary
 
 *** Variables ***
+${TIMEOUT}        5
 ${URL}            http://automationpractice.com/
-${BROWSER}        chrome
-${TIMEOUT}        20
+##Chose the webdriver and set in ${BROWSER}
+##headlessfirefox      #firefox       #headlesschrome     #chrome 
+${BROWSER}        headlesschrome
+
 
 *** Keywords ***
 Open the browser
     Set Selenium Timeout    ${TIMEOUT}          
     Open Browser            ${URL}         ${BROWSER}
 
-    
 Close the browser
     Capture Page Screenshot
     Close Browser
-    
