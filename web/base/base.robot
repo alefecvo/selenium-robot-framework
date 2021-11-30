@@ -6,7 +6,7 @@ ${TIMEOUT}        5
 ${URL}            http://automationpractice.com/
 ##Chose the webdriver and set in ${BROWSER}
 ##headlessfirefox      #firefox       #headlesschrome     #chrome 
-${BROWSER}        headlesschrome
+${BROWSER}        headlessfirefox
 
 
 *** Keywords ***
